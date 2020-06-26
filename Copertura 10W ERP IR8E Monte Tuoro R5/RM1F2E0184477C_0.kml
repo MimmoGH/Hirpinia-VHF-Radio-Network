@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di Copertura IR8E Monte Tuoro R5</name>
+<GroundOverlay><name>Copertura</name>
+<description>145.673 MHz | 
+9.98 W ERPI | 
+154.51 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RM1F2E0184477C_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 41.83016</north>
+<south> 40.03152</south>
+<east> 16.13984</east>
+<west> 13.75911</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>IR8E M Tuoro (R5)</name>
+<Point><coordinates> 14.94947702, 40.93083864,0
+</coordinates></Point></Placemark></Folder></kml>

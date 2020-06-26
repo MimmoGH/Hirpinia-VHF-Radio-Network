@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di Copertura Prefettura 50W 80Km</name>
+<GroundOverlay><name>Copertura</name>
+<description>145.000 MHz | 
+99.76 W ERPI | 
+164.51 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RMD62F41B04144_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 41.81413</north>
+<south> 40.01548</south>
+<east> 15.98149</east>
+<west> 13.60134</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>Sala Radio Prefettura</name>
+<Point><coordinates> 14.79141444, 40.91480778,0
+</coordinates></Point></Placemark></Folder></kml>

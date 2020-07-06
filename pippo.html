@@ -1,0 +1,94 @@
+<p>Javascript</p>
+<!-- A word of explanation:  
+
+In Drupal 7 we cannot include less than "<" or greater than ">"
+symbols without being at risk of befouling the simpleton text/HTML parser.
+If it detects what it thinks are broken HTML tags (unmatched < >, it will spray
+&lt; and &gt; and &amp; symbols through the remainder of the document, causing
+major headaches.  The solution is to use a simple function to make a
+comparison, then return a character which can be evaluated using "==".  This avoids also
+apparent tags within tags, e.g. <  ... > ... <  ...> where the middle tags are part of the
+Javascript.
+
+-->
+
+<div style="width: 650px;"><!-- enclosing all forms --><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+function compareNumber(a,b)
+{
+ 
+       if (a < b)       return '-';
+       else if(a === b) return '=';
+       else if(a > b)   return '+';
+       else             return 'z';
+} 
+
+//--><!]]>
+</script><center>
+<h3>Converti Gradi Minuti Secondi ad Angoli Decimali </h3>
+<script type="text/javascript" language="javascript">
+<!--//--><![CDATA[// ><!--
+<!--
+   var latsign = 1.;
+   var lonsign = 1.;
+   var absdlat = 0;
+   var absdlon = 0;
+   var absmlat = 0;
+   var absmlon= 0;
+   var absslat = 0;
+   var absslon = 0;
+
+//  form10.alat.value = ' ';
+//  form10.alon.value = ' ';
+
+form10.reset;
+
+-->
+//--><!]]>
+</script><!--- =============================================================================================== ----><table align="left" cellpadding="7" summary=" " width="650"><tbody><tr><td width="20"> </td>
+			<td>
+			<form enctype="application/x-www-form-urlencoded" method="POST" name="form10" id="form10">
+			<table bgcolor="#7FFFD4" border="0" cellpadding="7" summary=" " width="650"><tbody><tr><td><label for="DMSlat"><nobr> Gradi Minuti Secondi Latitudine:  </nobr></label></td>
+						<td width="290"><nobr><input id="DMSlat" maxlength="4" name="dlat" onblur="&#10;&#10;      if(compareNumber(form10.dlat.value, 0) == '-' )  { latsign = -1.; } else { latsign = 1.; }&#10;      absdlat = Math.abs( Math.round(form10.dlat.value * 1000000.));&#10;&#10;      //Math.round is used to eliminate the small error caused by rounding in the computer:&#10;      //e.g. 0.2 is not the same as 0.20000000000284&#10;      //Error checks&#10;&#10;      if(compareNumber(absdlat, (90 * 1000000)) == '+' )  { alert(' Gradi Latitudine deve essere tra -90 e 90. '); form10.dlat.value = '';  form10.mlat.value=''; form10.slat.value='';  }&#10;&#10;" size="4" style="max-width: 80px;" tabindex="37" type="INT" value="" /> <input id="DMSlat" maxlength="2" name="mlat" onblur="&#10;&#10;    form10.mlat.value = Math.abs(Math.round(form10.mlat.value * 1000000.)/1000000);  &#10;    absmlat = Math.abs(Math.round(form10.mlat.value * 1000000.));                    &#10;&#10;     if(compareNumber(absmlat, (60 * 1000000)) == '+') {  alert(' Minuti Latitudine devono essere tra 0 e 59. ');   form10.mlat.value=''; form10.slat.value=''; }&#10;&#10;" size="4" style="max-width: 80px;" tabindex="38" type="INT" value="" /> <input id="DMSlat" maxlength="6" name="slat" onblur="&#10;&#10;     form10.slat.value = Math.abs(Math.round(form10.slat.value * 1000000.)/1000000);&#10;     absslat = Math.abs(Math.round(form10.slat.value * 1000000.));         &#10;&#10;     if(compareNumber(absslat,  (59.99999999 * 1000000)) ==  '+' ) {  alert(' Secondi Latitudine deve essere >=0 \n e meno di 60. ');   form10.slat.value=''; }&#10;&#10;" size="6" style="max-width: 110px;" tabindex="39" type="INT" value="" /></nobr></td>
+					</tr><tr><td><label for="DMSlon"><nobr> Gradi Minuti Secondi Longitudine : </nobr></label></td>
+						<td width="290"><nobr><input id="DMSlon" maxlength="4" name="dlon" onblur="&#10;&#10;      if(compareNumber (form10.dlon.value,  0) == '-' )  { lonsign = -1.; } else { lonsign = 1.; }&#10;      absdlon = Math.abs( Math.round(form10.dlon.value * 1000000.));&#10;     &#10;      if(compareNumber(absdlon, (180 * 1000000)) == '+') {  alert(' Degrees Longitudine deve essere tra -180 e 180. '); form10.dlon.value=''; form10.mlon.value=''; form10.slon.value='';}&#10;&#10;" size="4" style="max-width: 80px;" tabindex="40" type="INT" value="" /> <input id="DMSlon" maxlength="2" name="mlon" onblur="&#10;&#10;     form10.mlon.value = Math.abs(Math.round(form10.mlon.value * 1000000.)/1000000);  &#10;     absmlon = Math.abs(Math.round(form10.mlon.value * 1000000));  //integer&#10;&#10;     if(compareNumber(absmlon, (60 * 1000000)) == '+')   {  alert(' Minutes Longitudine must be in the range of 0 to 59. ');   form10.mlon.value=''; form10.slon.value=''; }&#10; &#10;" size="4" style="max-width: 80px;" tabindex="41" type="INT" value="" /> <input id="DMSlon" maxlength="6" name="slon" onblur="&#10;&#10;     form10.slon.value = Math.abs(Math.round(form10.slon.value * 1000000.)/1000000);&#10;     absslon = Math.abs(Math.round(form10.slon.value * 1000000.));         &#10;&#10;     if(compareNumber(absslon, (59.99999999 * 1000000)) == '+') {  alert(' Seconds Latitudine must be 0 or greater \n and less than 60. ');   form10.slon.value=''; }&#10;&#10;" size="6" style="max-width: 110px;" tabindex="42" type="INT" value="" /></nobr></td>
+					</tr><tr><td align="right" colspan="2"><input name="submit" onclick="&#10;&#10;     form10.alat.value = ((Math.round(absdlat + (absmlat/60.) + (absslat/3600.))/1000000)) * latsign;&#10;&#10; //    if(compareNumber(latsign, 0) == '-' )  form10.alat.value = 0.0 - form10.alat.value;&#10;     // We have to do it this way because IE11 doesn't handle negative numbers correctly&#10;&#10;     form10.alon.value = ((Math.round(absdlon + (absmlon/60.) + (absslon/3600))/1000000)) * lonsign;&#10;&#10;//     if(compareNumber(lonsign, 0) == '-' )  form10.alon.value = 0.0 - form10.alon.value;&#10;     // We have to do it this way because IE11 doesn't handle negative numbers correctly&#10;&#10;&#10;" size="37" style="max-width: 205px;" tabindex="43" type="BUTTON" value="  Converti a Decimali  " />   <input onclick="&#10;&#10;latsign = 1.;&#10;lonsign = 1.;&#10;absdlat=0;&#10;absdlon=0;&#10;absmlat=0;&#10;absmlon=0;&#10;absslat=0;&#10;absslon=0;&#10;form10.alat.value='';&#10;form10.alon.value='';&#10;&#10;" style="max-width: 225px;" tabindex="44" type="reset" value="Pulisci Valori" />     </td>
+					</tr><tr><td align="right" colspan="2"><nobr><b> Valori :</b>  Latitudine: <input maxlength="17" name="alat" size="17" style="max-width: 150px;" tabindex="45" type="INT" value="" />  Longitudine: <input maxlength="17" name="alon" size="17" style="max-width: 150px;" tabindex="46" type="INT" value="" />           </nobr></td>
+					</tr></tbody></table></form>
+			</td>
+		</tr></tbody></table>
+ 
+
+<p><a name="DECIMAL2DMS" id="DECIMAL2DMS"></a></p>
+
+<h3> Converti Angoli Decimali a Gradi Minuti Secondi</h3>
+<script type="text/javascript" language="javascript">
+<!--//--><![CDATA[// ><!--
+<!--
+
+   form11.reset;
+   var signlat = 1.;
+   var signlon = 1.;
+   var latAbs=0;
+   var lonAbs=0;
+   var deglat=' ';
+   var deglon=' '
+   
+-->
+//--><!]]>
+</script><table align="left" cellpadding="7" summary="" width="550"><tbody><tr><td width="20"> </td>
+			<td>
+			<form enctype="application/x-www-form-urlencoded" method="POST" name="form11" id="form11">
+			<table bgcolor="#7FFFD4" border="0" cellpadding="7" summary=" " width="480"><tbody><tr><td><label for="Gradi Lat"><nobr>Latitudine in decimali:  </nobr></label></td>
+						<td><nobr><input id="DegreesLat" maxlength="10" name="decimalLat" onblur="&#10;&#10;  if(compareNumber(form11.decimalLat.value, 0) == '-')  { signlat = -1.; } else { signlat = 1; }&#10;  latAbs = Math.abs( Math.round(form11.decimalLat.value * 1000000.));&#10;  if(compareNumber(latAbs, (90 * 1000000)) == '+') { alert(' Gradi Latitudine deve essere tra -90. a 90. '); form11.decimalLat.value = '';  latAbs=0; }&#10;&#10;" size="11" style="max-width: 150px;" tabindex="47" type="INT" value="" /></nobr></td>
+					</tr><tr><td><label for="DegreesLon"><nobr>Longitudine in decimali:  </nobr></label></td>
+						<td><input id="DegreesLon" maxlength="11" name="lonDecimal" onblur="&#10;&#10;      if(compareNumber(form11.lonDecimal.value, 0) == '-' )  { signlon = -1.; } else { signlon = 1.; }&#10;      lonAbs = Math.abs(Math.round(form11.lonDecimal.value * 1000000.));&#10;      if(compareNumber(lonAbs, (180 * 1000000)) == '+') {  alert(' Degrees Longitudine deve essere tra -180 e 180. '); form11.lonDecimal.value='';  lonAbs=0; }&#10;&#10;" size="11" style="max-width: 150px;" tabindex="48" type="INT" value="" /> </td>
+					</tr><tr><td align="right" colspan="2"><input name="submit" onclick="&#10;   &#10;&#10;    form11.deglat.value=((Math.floor(latAbs/1000000)*signlat)+'° '+ Math.floor(((latAbs/1000000)-Math.floor(latAbs/1000000))*60)+'\' '+( Math.floor(((((latAbs/1000000)-Math.floor(latAbs/1000000))&#10;*60)-Math.floor(((latAbs/1000000)-Math.floor(latAbs/1000000))*60))*100000)*60/100000)+'&quot;');&#10;&#10;   form11.deglon.value=((Math.floor(lonAbs/1000000)*signlon)+'° '+ Math.floor(((lonAbs/1000000)-Math.floor(lonAbs/1000000))*60)+'\' '+( Math.floor(((((lonAbs/1000000)-Math.floor(lonAbs/1000000))&#10;*60)-Math.floor(((lonAbs/1000000)-Math.floor(lonAbs/1000000))*60))*100000)*60/100000 )+'&quot;');&#10;&#10;" style="max-width: 265px;" tabindex="49" type="BUTTON" value="Converti a Gradi Minuti Secondi" />   <input onclick="&#10;&#10;form11.reset;&#10;latAbs=0;&#10;lonAbs=0;&#10;signlat = 1.;&#10;signlon=1.;&#10;&#10;" style="max-width: 150px;" tabindex="50" type="reset" value="Pulisci Valori" />     </td>
+					</tr><tr><td align="right" colspan="2"><nobr>Valori:  Latitudine: <input id="deglathere" maxlength="17" name="deglat" size="17" style="max-width: 150px;" tabindex="51" type="INT" value="" />  Longitudine: <input id="deglonhere" maxlength="19" name="deglon" size="19" style="max-width: 150px;" tabindex="52" type="INT" value="" />           </nobr></td>
+					</tr></tbody></table></form>
+			</td>
+		</tr></tbody></table><!--- =============================================================================================== ----></center>
+</div>
+
+<p> </p>

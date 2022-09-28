@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di IR8UBV 430 MHz</name>
+<GroundOverlay><name>Copertura</name>
+<description>430.000 MHz | 
+39.91 W ERPI | 
+160.53 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RM226148BF88E_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 41.83325</north>
+<south> 40.03461</south>
+<east> 15.91483</east>
+<west> 13.53399</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>IR8UBV</name>
+<Point><coordinates> 14.724409, 40.933929,0
+</coordinates></Point></Placemark></Folder></kml>

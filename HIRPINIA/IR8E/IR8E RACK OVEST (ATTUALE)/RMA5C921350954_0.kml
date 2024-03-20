@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di Copertura IR8E RACK OVEST*</name>
+<GroundOverlay><name>Copertura</name>
+<description>145.725 MHz | 
+19.95 W ERPI | 
+157.52 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RMA5C921350954_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 41.83016</north>
+<south> 40.03152</south>
+<east> 16.13984</east>
+<west> 13.75911</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>IR8E R5  - M Tuoro</name>
+<Point><coordinates> 14.94947702, 40.93083864,0
+</coordinates></Point></Placemark></Folder></kml>

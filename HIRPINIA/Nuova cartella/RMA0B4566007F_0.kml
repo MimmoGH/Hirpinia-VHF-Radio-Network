@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di ANPAS</name>
+<GroundOverlay><name>Copertura</name>
+<description>145.725 MHz | 
+4.93 W ERPI | 
+151.45 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RMA0B4566007F_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 41.94588</north>
+<south> 40.14724</south>
+<east> 16.19668</east>
+<west> 13.81176</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>COM 13 - Mirabella Eclano</name>
+<Point><coordinates> 15.00422, 41.04656,0
+</coordinates></Point></Placemark></Folder></kml>

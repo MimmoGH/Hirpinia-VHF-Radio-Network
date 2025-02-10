@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di Vesuvio 145.725 MHz</name>
+<GroundOverlay><name>Copertura</name>
+<description>145.725 MHz | 
+4.93 W ERPI | 
+151.45 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RMEEB2797B109_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 41.72388</north>
+<south> 39.92523</south>
+<east> 15.57884</east>
+<west> 13.20193</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>Vesuvio</name>
+<Point><coordinates> 14.390389, 40.824556,0
+</coordinates></Point></Placemark></Folder></kml>

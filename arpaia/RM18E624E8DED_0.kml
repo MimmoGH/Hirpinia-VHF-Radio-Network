@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di ARPAIA 145.637 MHz</name>
+<GroundOverlay><name>Copertura</name>
+<description>145.637 MHz | 
+4.93 W ERPI | 
+151.45 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RM18E624E8DED_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 42.24488</north>
+<south> 40.44623</south>
+<east> 15.74764</east>
+<west> 13.35181</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>ARPAIA</name>
+<Point><coordinates> 14.549722, 41.345556,0
+</coordinates></Point></Placemark></Folder></kml>

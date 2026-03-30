@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di Acqua degli Uccelli (Volturara) 145.725 MHz</name>
+<GroundOverlay><name>Copertura</name>
+<description>145.725 MHz | 
+4.93 W ERPI | 
+151.45 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RM17EF2103BE30_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 41.73411</north>
+<south> 39.93546</south>
+<east> 16.14137</east>
+<west> 13.76409</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>Acqua degli Uccelli (Volturara)</name>
+<Point><coordinates> 14.95273322, 40.83478592,0
+</coordinates></Point></Placemark></Folder></kml>

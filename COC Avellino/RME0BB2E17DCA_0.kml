@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder><name>Copertura di Centro Operativo Comunale AV 145.725 MHz</name>
+<GroundOverlay><name>Copertura</name>
+<description>145.725 MHz | 
+4.93 W ERPI | 
+151.45 dB Guadagno del sistema</description>
+<color>88ffffff</color><Icon><href>RME0BB2E17DCA_0.png</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 41.81543</north>
+<south> 40.01678</south>
+<east> 15.99395</east>
+<west> 13.61375</west>
+</LatLonBox></GroundOverlay>
+<Placemark><name>Centro Operativo Comunale AV</name>
+<Point><coordinates> 14.80384916, 40.91610903,0
+</coordinates></Point></Placemark></Folder></kml>
